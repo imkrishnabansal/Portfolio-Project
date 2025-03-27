@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import About from "./About";
 import Projects from "./Projects";
+import "../App.css"
 
 const HomePage = () => {
   return (
@@ -9,7 +10,7 @@ const HomePage = () => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">Divya K</a>
+          <a className="navbar-brand" href="/">Krishna Bansal</a>
           <button
             className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
             type="button"
@@ -34,7 +35,7 @@ const HomePage = () => {
               </li>
              
               <li className="nav-item">
-                <Link className="nav-link p-4" to="/projects">Projects</Link>
+                <Link className="nav-link p-4" to="/project">Projects</Link>
               </li>
             </ul>
             {/* Download CV Button */}
@@ -106,10 +107,10 @@ const HomePage = () => {
           {/* Project Item 1 */}
           <div className="item1">
             <div className="layer">
-              <a href="https://github.com/Iamdivyak/education-site" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/imkrishnabansal/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://iamdivyak.github.io/education-site/" target="_blank" rel="noopener noreferrer">
+              <a href="https://imkrishnabansal.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
                 Live Web
               </a>
             </div>
@@ -118,10 +119,10 @@ const HomePage = () => {
           {/* Project Item 2 */}
           <div className="item2">
             <div className="layer">
-              <a href="https://github.com/Iamdivyak/mistoreclone" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/imkrishnabansal/Riwayat-ByteWave" target="" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://mistoreclonesite.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 Live Web
               </a>
             </div>
@@ -130,10 +131,10 @@ const HomePage = () => {
           {/* Project Item 3 */}
           <div className="item3">
             <div className="layer">
-              <a href="https://github.com/Iamdivyak/QuizGame" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://iamdivyak.github.io/QuizGame/" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 Live Web
               </a>
             </div>
@@ -142,22 +143,21 @@ const HomePage = () => {
           {/* Project Item 4 */}
           <div className="item4">
             <div className="layer">
-              <a href="https://github.com/Iamdivyak/Digital-Business-Card" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/imkrishnabansal/BookScape" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://divya-business-card.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://imkrishnabansal.github.io/BookScape/" target="_blank" rel="noopener noreferrer">
                 Live Web
               </a>
             </div>
           </div>
-
           {/* Project Item 5 */}
           <div className="item5">
             <div className="layer">
-              <a href="https://github.com/Iamdivyak/E-commerce-website" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/imkrishnabansal/Quiz-App" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="https://iamdivyak.github.io/E-commerce-website/" target="_blank" rel="noopener noreferrer">
+              <a href="https://imkrishnabansal.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer">
                 Live Web
               </a>
             </div>
@@ -273,7 +273,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       {/* Footer Section */}
       <footer className="footer">
         <div className="footer-bottom">
