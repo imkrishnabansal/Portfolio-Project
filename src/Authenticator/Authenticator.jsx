@@ -4,7 +4,7 @@ import { TextField, Button, Paper, Typography, Container } from "@mui/material";
 import "./Authenticator.css";
 
 const users = [
-  { username: "krishna", password: "password123" },
+  { username: "krishna", password: "123" },
   { username: "Priyanshi", password: "Priyanshi@123" },
   { username: "Ayushi V", password: "Ayushi@123" },
   { username: "Ayushi Ag", password: "AyushiA@123" },

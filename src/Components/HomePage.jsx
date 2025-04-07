@@ -3,6 +3,13 @@ import {Link} from 'react-router-dom'
 import About from "./About";
 import Projects from "./Projects";
 import "../App.css"
+import Bansalresume from "../assets/Bansal Resume.docx.pdf"
+import myImage from "../assets/Img1.png"
+import linkedinIcon from "../assets/linkedin.png"
+import twitterIcon from "../assets/twitter.png"
+import githubIcon from "../assets/github.webp"
+
+
 
 const HomePage = () => {
   return (
@@ -39,9 +46,7 @@ const HomePage = () => {
               </li>
             </ul>
             {/* Download CV Button */}
-            <a href="/cv/divya_kumari_resume.pdf" download="DivyaKumari" className="btn btn-primary">
-              Download CV
-            </a>
+              <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download  </a>
           </div>
         </div>
       </nav>
@@ -68,14 +73,14 @@ const HomePage = () => {
 
               {/* Social Media Links */}
               <div className="social-media">
-                <a href="https://www.linkedin.com/in/iamdivyak/" target="_blank" rel="noopener noreferrer">
-                  {/* <img src={linkedinIcon} alt="LinkedIn" /> */}
+                <a href="https://www.linkedin.com/in/imkrishnabansal/" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
-                <a href="https://twitter.com/Imdivyakumari" target="_blank" rel="noopener noreferrer">
-                  {/* <img src={twitterIcon} alt="Twitter" /> */}
+                <a href="https://x.com/krishna_ba48793" target="_blank" rel="noopener noreferrer">
+                  <img src={twitterIcon} alt="Twitter" />
                 </a>
-                <a href="https://github.com/Iamdivyak" target="_blank" rel="noopener noreferrer">
-                  {/* <img src={githubIcon} alt="GitHub" /> */}
+                <a href="https://github.com/imkrishnabansal" target="_blank" rel="noopener noreferrer">
+                  <img src={githubIcon} alt="GitHub" />
                 </a>
               </div>
             </div>
@@ -96,6 +101,7 @@ const HomePage = () => {
 
         {/* Project Description */}
         <div className="project-section">
+          
           <h2>FEATURED WORK</h2>
           <p className="para">
             I love making websites that can grow big, finding useful solutions, and always learning to get better in the IT world.
@@ -106,15 +112,18 @@ const HomePage = () => {
         <div className="project-grid">
           {/* Project Item 1 */}
           <div className="item1">
-            <div className="layer">
-              <a href="https://github.com/imkrishnabansal/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-              <a href="https://imkrishnabansal.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
-                Live Web
-              </a>
-            </div>
-          </div>
+  <div className="layer">
+    <img src={myImage} alt="Project Preview" className="layer-image" />
+    <div className="project-links">
+      <a href="https://github.com/imkrishnabansal/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+      <a href="https://imkrishnabansal.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">
+        Live Web
+      </a>
+    </div>
+  </div>
+</div>
 
           {/* Project Item 2 */}
           <div className="item2">
@@ -220,6 +229,54 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    {/* Skills */}
+     {/* <div className="section">
+        <div className="container-fluid">
+          <p className="title">-SKILLS</p>
+          <div className="skill-section">
+            <h2>AREA OF EXPERTISE</h2>
+            <p className="para">
+              Let's kickstart your project and collaborate to build something amazing. I'll bring my skills to make your next project shine.
+            </p>
+          </div> */}
+
+          {/* <div className="skills">
+            {[
+              { src: "./img/Html.png", label: "HTML", className: "border1 border_right" },
+              { src: "./img/css.png", label: "CSS", className: "border1" },
+              { src: "./img/javascript (1).png", label: "JAVASCRIPT", className: "border1 border3" },
+              { src: "./img/Bootstrap 1.png", label: "BOOTSTRAP", className: "border1" },
+              { src: "./img/node-js.png", label: "Node.js", className: "border1 border_right" },
+              { src: "./img/react (2).png", label: "React", className: "border1" },
+              { src: "./img/git (2).png", label: "Git", className: "border1 border_right border7" },
+              { src: "./img/github (7).png", label: "GitHub", className: "border1" },
+              { src: "./img/adobe-xd.png", label: "Adobe XD", className: "border_bottom borderSL" },
+              { src: "./img/photoshop.png", label: "Photoshop", className: "border2 border10" },
+              { src: "./img/icons8-figma-512.png", label: "Figma", className: "border_right" },
+              { src: "./img/WordPress.png", label: "WordPress", className: "" },
+            ].map((skill, index) => (
+              <div className={`skill ${skill.className}`} key={index}>
+                <div className="items">
+                  <img src={skill.src} alt={skill.label} />
+                  <p>{skill.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div> */}
+
+      {/* Connect Section */}
+      <div className="section">
+        <div className="container-fluid bg rounded text-center pb-5 pos-relative">
+          <img src="./img/Rocket1.png" alt="Rocket" />
+          <h1 className="custom-h1">HAVE A PROJECT IN MIND?</h1>
+          <p className="para p-4">Turn your dream website into reality with us. Let's get started!</p>
+          <a href="#" className="homeBtn">
+            Let’s create an awesome website
+          </a>
+        </div>
+      </div>
     {/* Connect me and footer */}
     <div id="connectMe" className="section">
       <div className="container-fluid">

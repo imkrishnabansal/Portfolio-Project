@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // import githubIcon from "../assets/img/GitHub.png";
 // import workImage from "../assets/img/Girl is working on laptop at a remote job.png";
 // import resumePDF from "../assets/cv/divya_kumari_resume.pdf"; 
+import Bansalresume from "../assets/Bansal Resume.docx.pdf"
 const About = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const About = () => {
               <li className="nav-item"><Link className="nav-link p-4" to="/pricing">Pricing</Link></li>
               <li className="nav-item"><Link className="nav-link p-4" to="/projects">Projects</Link></li>
             </ul>
-            {/* <a href={resumePDF} download="DivyaKumari" className="my-cv">Download CV</a> */}
+            <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download </a>
           </div>
         </div>
       </nav>
