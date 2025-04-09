@@ -598,3 +598,83 @@ a{
 .back-to-top_show:active {
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
+
+
+/* Add this to App.css */
+
+// Projects section styles
+
+.projects-section {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+.project-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 900px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-section {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 400px;
+  height: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section .btn1 {
+  padding: 10px 30px;
+  margin: 40px;
+  background-color: #EA5D5F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-section .btn2 {
+  padding: 10px 30px;
+  margin: 5px;
+  background-color: #EA5D5F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-section .btn:hover {
+  background-color: #0056b3;
+}
+
+.description-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.description-section h3 {
+  margin: 5px 5px 80px;
+}
+
+.description-section p {
+  margin: 0;
+  color: #555;
+}
