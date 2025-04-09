@@ -281,6 +281,47 @@ grid-template-areas:
 gap: 10px;
 padding: 10px;
 }
+.layer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures it fills the container properly */
+  z-index: 1;
+  opacity: 0.8; /* Optional: to darken/lighten for better text visibility */
+  border-radius: 10px; /* If your white card has rounded corners */
+}
+
+.project-links {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.project-links a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
 
 .project-grid > div {
 text-align: center;
@@ -372,15 +413,16 @@ border-radius: 10px;
   padding: 1.5rem 0;
 }
 .social-media{
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .social-media img{
-  width: 40px;
+  width: 25px;
   transition: 300ms ease-in;
 
 }
 .social-media img:hover{
-  transform:scale(1.2) rotate(-45deg);  
+  transform:scale(1.2); 
 }
 .social-media a{
   margin: auto 1.5rem;

@@ -7,13 +7,14 @@ import { Link } from "react-router-dom";
 // import githubIcon from "../assets/img/GitHub.png";
 // import workImage from "../assets/img/Girl is working on laptop at a remote job.png";
 // import resumePDF from "../assets/cv/divya_kumari_resume.pdf"; 
+import Bansalresume from "../assets/Bansal Resume.docx.pdf"
 const About = () => {
   return (
     <>
       {/* Navbar */}
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">Divya K</Link>
+          <Link className="navbar-brand" to="/">Krishna Bansal</Link>
           <button
             className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
             type="button"
@@ -34,7 +35,7 @@ const About = () => {
               <li className="nav-item"><Link className="nav-link p-4" to="/pricing">Pricing</Link></li>
               <li className="nav-item"><Link className="nav-link p-4" to="/projects">Projects</Link></li>
             </ul>
-            {/* <a href={resumePDF} download="DivyaKumari" className="my-cv">Download CV</a> */}
+            <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download </a>
           </div>
         </div>
       </nav>
@@ -50,10 +51,10 @@ const About = () => {
                 <p className="para">
                   I’m Krishna bansal, a junior and talented Web Designer with front-end development skills. I am passionate about leveraging my diverse background to decipher challenging problems and create delightful experiences.
                   <br /><br />
-                  I develop websites with HTML, CSS, and JavaScript. I have top skills in using design software like Figma, Adobe XD, and Photoshop.
+                  I develop websites with MERN stack I have top skills in using design software like WordPress Canva etc.
                 </p>
                 <br />
-                <a href="mailto:kumaridivya2796@gmail.com" className="homeBtn">HIRE ME</a>
+                <a href="mailto:lalibansal454@gmail.com" className="homeBtn">HIRE ME</a>
                 {/* <a href={resumePDF} download="DivyaKumari" className="my-cv">Download CV</a> */}
               </div>
               <div className="col-md-6 img-sec text-center">
