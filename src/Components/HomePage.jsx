@@ -40,6 +40,11 @@ const HomePage = () => {
               <li className="nav-item">
                 <Link className="nav-link p-4" to="/about">About</Link>
               </li>
+
+              <li className="nav-item">
+                <Link className="nav-link p-4" to="/pricing">Pricing</Link>
+              </li>
+              
              
               <li className="nav-item">
                 <Link className="nav-link p-4" to="/project">Projects</Link>

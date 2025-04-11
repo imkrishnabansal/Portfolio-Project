@@ -153,10 +153,6 @@ a.my-cv:hover {
   /* Add a 0s transition for the specified properties */ 
 }
 
-
-
-
-
 /* first-section */
 .first-section{
   background-color: #FEF4F2;
@@ -262,7 +258,7 @@ color: #0D0F16;
 }
 /* Projects section */
 .item1 { grid-area: one;
-   background-image: url(../img/project05.png);
+   background-image: url(../src/assets/Qr_generater2.png);
    
 }
 .item2 {
@@ -684,23 +680,53 @@ a{
 }
 
 .image-section .btn1 {
-  padding: 10px 30px;
-  margin: 40px;
+  padding: 10px 20px;
+  margin: 30px;
   background-color: #EA5D5F;
-  color: white;
-  border: none;
+  border: .1rem solid #F87474;
+  color: #F87474;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+  border: .1rem solid #F87474;
+  border-radius: .5rem;
+  background-color: #FEF4F2 !important; 
+}
+
+.image-section .btn1:hover {
+  background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); /* Add your desired gradient colors */
+  color: white;
+  font-weight: 600;
+  border: .1rem  solid white;
+  transition: all 1s ease-in-out; 
+  /* Add a 0s transition for the specified properties */ 
 }
 
 .image-section .btn2 {
-  padding: 10px 30px;
-  margin: 5px;
+  padding: 10px 20px;
+  margin: 30px;
   background-color: #EA5D5F;
-  color: white;
-  border: none;
+  border: .1rem solid #F87474;
+  color: #F87474;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
+  border: .1rem solid #F87474;
+  border-radius: .5rem;
+  background-color: #FEF4F2 !important;
+}
+
+.image-section .btn2:hover {
+  background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); /* Add your desired gradient colors */
+  color: white;
+  font-weight: 600;
+  border: .1rem  solid white;
+  transition: all 1s ease-in-out; 
+  /* Add a 0s transition for the specified properties */ 
 }
 
 .image-section .btn:hover {
