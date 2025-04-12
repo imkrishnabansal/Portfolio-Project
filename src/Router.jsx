@@ -4,6 +4,7 @@ import Authenticator from "./Authenticator/Authenticator"
 import HomePage from './Components/HomePage';
 import Projects from './Components/Projects';
 import About from './Components/About';
+import PriyanshiHome from './Priyanshi/PriyanshiHome';
 
 const AppRouter = () => {
   return (
@@ -13,6 +14,7 @@ const AppRouter = () => {
         <Route path="homepage" element={<HomePage />} />
         <Route path="project" element={<Projects />} />
         <Route path="about" element={<About />} />
+        <Route path= "PHome" element= {<PriyanshiHome/>}/>
       </Routes>
     </Router>
   );

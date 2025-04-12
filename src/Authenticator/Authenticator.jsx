@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Paper, Typography, Container } from "@mui/material";
 import "./Authenticator.css";
+import UserService from "./../userService"
 
 const users = [
   { username: "krishna", password: "123" },
-  { username: "Priyanshi", password: "Priyanshi@123" },
-  { username: "Ayushi V", password: "Ayushi@123" },
-  { username: "Ayushi Ag", password: "AyushiA@123" },
-  { username: "Sumit", password: "Sumit@123" },
-]; // ✅ Predefined user database
+  { username: "Priyanshi", password: "123" },
+  { username: "Ayushi V", password: "123" },
+  { username: "Ayushi Ag", password: "123" },
+  { username: "Sumit", password: "123" },
+];
 
 const Authenticator = () => {
   const navigate = useNavigate();
@@ -21,9 +22,8 @@ const Authenticator = () => {
     phone: "",
     newPassword: "",
   });
-  const [errorMessage, setErrorMessage] = useState(""); // ✅ Error message state
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // Toggle Login/Sign-up
   const toggleAuth = () => {
     setIsLogin(!isLogin);
     setFormData({
@@ -33,53 +33,69 @@ const Authenticator = () => {
       phone: "",
       newPassword: "",
     });
-    setErrorMessage(""); // Clear error message when switching
+    setErrorMessage("");
   };
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (isLogin) {
-      const user = users.find((u) => u.username === formData.username);
+      const { username, password } = formData;
+
+      // ✅ Hardcoded check
+      if (username === "krishna" && password === "123") {
+        UserService.setCurrentUser({ username: "krishna" });
+        navigate("/homepage");
+        return;
+      }
+
+      if (username === "Priyanshi" && password === "123") {
+        UserService.setCurrentUser({ username: "Priyanshi" });
+        navigate("/PHome");
+        return;
+      }
+
+      const user = users.find((u) => u.username === username);
       if (!user) {
         setErrorMessage("Username not found! Please create an account.");
         return;
       }
-      if (user.password !== formData.password) {
+      if (user.password !== password) {
         setErrorMessage("Incorrect password! Please try again.");
         return;
       }
-      navigate("/HomePage"); // Redirect to homepage if login is successful
+
+      UserService.setCurrentUser(user); // ✅ Set user for broadcasting
+      navigate("/HomePage");
     } else {
-      // ✅ Sign Up: Check if phone number already exists
       const existingUserByPhone = users.find((u) => u.phone === formData.phone);
       if (existingUserByPhone) {
         setErrorMessage("Account with this phone number already exists! Please log in.");
         return;
       }
 
-      // ✅ Check if username is already taken
       const existingUserByUsername = users.find((u) => u.username === formData.username);
       if (existingUserByUsername) {
         setErrorMessage("Username already taken! Try a different one.");
         return;
       }
 
-      // ✅ Register the new user
-      users.push({ 
-        username: formData.username, 
-        password: formData.newPassword, 
-        phone: formData.phone 
-      });
-      navigate("/HomePage"); //  Redirect to homepage after successful registration
+      const newUser = {
+        username: formData.username,
+        password: formData.newPassword,
+        phone: formData.phone,
+      };
+      users.push(newUser);
+      UserService.setCurrentUser(newUser); // ✅ Set user for broadcasting
+      navigate("/HomePage");
     }
   };
+
+  
 
   return (
     <Container maxWidth="sm">
@@ -94,7 +110,7 @@ const Authenticator = () => {
           </Button>
         </div>
 
-        {errorMessage && <Typography color="error">{errorMessage}</Typography>} {/* ✅ Show error message */}
+        {errorMessage && <Typography color="error">{errorMessage}</Typography>}
 
         <form onSubmit={handleSubmit} className="auth-form">
           {isLogin ? (
@@ -160,7 +176,6 @@ const Authenticator = () => {
               />
             </>
           )}
-
           <Button variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
             {isLogin ? "Login" : "Sign Up"}
           </Button>

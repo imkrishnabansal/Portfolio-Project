@@ -8,11 +8,12 @@ import { Link } from "react-router-dom";
 // import workImage from "../assets/img/Girl is working on laptop at a remote job.png";
 // import resumePDF from "../assets/cv/divya_kumari_resume.pdf"; 
 import Bansalresume from "../assets/Bansal Resume.docx.pdf"
+import Navbar from "../navbar";
 const About = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      {/* <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">Krishna Bansal</Link>
           <button
@@ -30,15 +31,16 @@ const About = () => {
           </button>
           <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-              <li className="nav-item"><Link className="nav-link p-4" to="/">Home</Link></li>
+              <li className="nav-item"><Link className="nav-link p-4" to="/homepage">Home</Link></li>
               <li className="nav-item"><Link className="nav-link active p-4" to="/about">About</Link></li>
-              <li className="nav-item"><Link className="nav-link p-4" to="/pricing">Pricing</Link></li>
-              <li className="nav-item"><Link className="nav-link p-4" to="/projects">Projects</Link></li>
+              <li className="nav-item"><Link className="nav-link p-4" to="/project">Projects</Link></li>
             </ul>
             <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download </a>
           </div>
         </div>
-      </nav>
+      </nav> */}
+
+      <Navbar></Navbar>
 
       {/* About Me Section */}
       <div className="section bg">
