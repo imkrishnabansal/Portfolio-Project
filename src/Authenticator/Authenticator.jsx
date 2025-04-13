@@ -55,7 +55,7 @@ const Authenticator = () => {
 
       if (username === "Priyanshi" && password === "123") {
         UserService.setCurrentUser({ username: "Priyanshi" });
-        navigate("/PHome");
+        navigate("/Phome");
         return;
       }
 
