@@ -4,7 +4,7 @@ import About from "./About";
 import Projects from "./Projects";
 import "../App.css";
 import Bansalresume from "../assets/Bansal Resume.docx.pdf";
-import myImage from "../assets/Img1.png";
+import myImage from "../assets/myImage.jpeg";
 import linkedinIcon from "../assets/linkedin.png";
 import twitterIcon from "../assets/twitter.png";
 import githubIcon from "../assets/github.webp";
