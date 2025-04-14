@@ -8,38 +8,15 @@ import { Link } from "react-router-dom";
 // import workImage from "../assets/img/Girl is working on laptop at a remote job.png";
 // import resumePDF from "../assets/cv/divya_kumari_resume.pdf"; 
 import Bansalresume from "../assets/Bansal Resume.docx.pdf"
+import linkedinIcon from "../assets/linkedin.png";
+import twitterIcon from "../assets/twitter.png";
+import githubIcon from "../assets/github.webp";
+import email from "../assets/Email.webp"
+import workImage from "../assets/Agirl.jpg"
 import Navbar from "../navbar";
 const About = () => {
   return (
     <>
-      {/* Navbar */}
-      {/* <nav className="navbar navbar-expand-md navbar-light bg-light">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">Krishna Bansal</Link>
-          <button
-            className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="toggler-icon top-bar"></span>
-            <span className="toggler-icon middle-bar"></span>
-            <span className="toggler-icon bottom-bar"></span>
-          </button>
-          <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-              <li className="nav-item"><Link className="nav-link p-4" to="/homepage">Home</Link></li>
-              <li className="nav-item"><Link className="nav-link active p-4" to="/about">About</Link></li>
-              <li className="nav-item"><Link className="nav-link p-4" to="/project">Projects</Link></li>
-            </ul>
-            <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download </a>
-          </div>
-        </div>
-      </nav> */}
-
       <Navbar></Navbar>
 
       {/* About Me Section */}
@@ -57,10 +34,10 @@ const About = () => {
                 </p>
                 <br />
                 <a href="mailto:lalibansal454@gmail.com" className="homeBtn">HIRE ME</a>
-                {/* <a href={resumePDF} download="DivyaKumari" className="my-cv">Download CV</a> */}
+                <a href={Bansalresume} download="Krishna Bansal " className="my-cv">Download CV</a>
               </div>
               <div className="col-md-6 img-sec text-center">
-                {/* <img src={workImage} className="img-fluid" alt="Working on a laptop" /> */}
+                <img src={workImage} className="img-fluid" alt="Working on a laptop" />
               </div>
             </div>
           </div>
@@ -80,19 +57,19 @@ const About = () => {
               {/* Contact Info */}
               <div className="col-md-6">
                 <div className="contact">
-                  <a href="mailto:kumaridivya2796@gmail.com" className="email">
-                    {/* <img src={emailIcon} alt="Email Me" /> &nbsp; &nbsp; kumaridivya2796@gmail.com */}
+                  <a href="mailto:Krishna.bansal_cs22@gla.ac.in" className="email">
+                    <img src={email} alt="Email Me" /> &nbsp; &nbsp; Krishna.bansal_cs22@gla.ac.in 
                   </a>
                 </div>
                 <div className="social-media">
-                  <a href="https://www.linkedin.com/in/iamdivyak/" target="_blank" rel="noopener noreferrer">
-                    {/* <img src={linkedinIcon} alt="LinkedIn" /> */}
+                  <a href="https://www.linkedin.com/in/imkrishnabansal/" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinIcon} alt="LinkedIn" />
                   </a>
-                  <a href="https://twitter.com/Imdivyakumari" target="_blank" rel="noopener noreferrer">
-                    {/* <img src={twitterIcon} alt="Twitter" /> */}
+                  <a href="https://x.com/krishna_ba48793" target="_blank" rel="noopener noreferrer">
+                    <img src={twitterIcon} alt="Twitter" />
                   </a>
-                  <a href="https://github.com/Iamdivyak" target="_blank" rel="noopener noreferrer">
-                    {/* <img src={githubIcon} alt="GitHub" /> */}
+                  <a href="https://github.com/imkrishnabansal" target="_blank" rel="noopener noreferrer">
+                    <img src={githubIcon} alt="GitHub" />
                   </a>
                 </div>
               </div>
