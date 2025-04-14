@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Paper, Typography, Container } from "@mui/material";
 import "./Authenticator.css";
-import UserService from "./../userService"
+import UserService from "./../userService";
 
 const users = [
   { username: "krishna", password: "123" },
@@ -46,7 +46,6 @@ const Authenticator = () => {
     if (isLogin) {
       const { username, password } = formData;
 
-      // ✅ Hardcoded check
       if (username === "krishna" && password === "123") {
         UserService.setCurrentUser({ username: "krishna" });
         navigate("/homepage");
@@ -69,7 +68,7 @@ const Authenticator = () => {
         return;
       }
 
-      UserService.setCurrentUser(user); // ✅ Set user for broadcasting
+      UserService.setCurrentUser(user);
       navigate("/HomePage");
     } else {
       const existingUserByPhone = users.find((u) => u.phone === formData.phone);
@@ -90,98 +89,98 @@ const Authenticator = () => {
         phone: formData.phone,
       };
       users.push(newUser);
-      UserService.setCurrentUser(newUser); // ✅ Set user for broadcasting
+      UserService.setCurrentUser(newUser);
       navigate("/HomePage");
     }
   };
 
-  
-
   return (
-    <Container maxWidth="sm">
-      <Paper elevation={3} className="auth-container">
-        <div className="auth-header">
-          <img src="/assets/Riwayat.png" alt="Logo" className="logo" />
-          <Typography variant="h5" gutterBottom>
-            {isLogin ? "Login" : "Sign Up"}
-          </Typography>
-          <Button variant="outlined" color="primary" onClick={toggleAuth}>
-            {isLogin ? "Switch to Sign Up" : "Switch to Login"}
-          </Button>
-        </div>
+    <div className="auth-page-wrapper">
+      <Container maxWidth="sm">
+        <Paper elevation={3} className="auth-container">
+          <div className="auth-header">
+            <img src="/src/assets/logo.jpeg" alt="Logo" className="logo" />
+            <Typography variant="h5" gutterBottom>
+              {isLogin ? "Login" : "Sign Up"}
+            </Typography>
+            <Button variant="outlined" color="primary" onClick={toggleAuth}>
+              {isLogin ? "Switch to Sign Up" : "Switch to Login"}
+            </Button>
+          </div>
 
-        {errorMessage && <Typography color="error">{errorMessage}</Typography>}
+          {errorMessage && <Typography color="error">{errorMessage}</Typography>}
 
-        <form onSubmit={handleSubmit} className="auth-form">
-          {isLogin ? (
-            <>
-              <TextField
-                label="Username"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="large-input"
-              />
-              <TextField
-                label="Password"
-                type="password"
-                name="password"
-                value={formData.password}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="small-input"
-              />
-            </>
-          ) : (
-            <>
-              <TextField
-                label="Full Name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="large-input"
-              />
-              <TextField
-                label="Enter Phone Number"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="large-input"
-              />
-              <TextField
-                label="Username"
-                name="username"
-                value={formData.username}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="large-input"
-              />
-              <TextField
-                label="Create Password"
-                type="password"
-                name="newPassword"
-                value={formData.newPassword}
-                onChange={handleChange}
-                fullWidth
-                required
-                className="small-input"
-              />
-            </>
-          )}
-          <Button variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
-            {isLogin ? "Login" : "Sign Up"}
-          </Button>
-        </form>
-      </Paper>
-    </Container>
+          <form onSubmit={handleSubmit} className="auth-form">
+            {isLogin ? (
+              <>
+                <TextField
+                  label="Username"
+                  name="username"
+                  value={formData.username}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="large-input"
+                />
+                <TextField
+                  label="Password"
+                  type="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="small-input"
+                />
+              </>
+            ) : (
+              <>
+                <TextField
+                  label="Full Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="large-input"
+                />
+                <TextField
+                  label="Enter Phone Number"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="large-input"
+                />
+                <TextField
+                  label="Username"
+                  name="username"
+                  value={formData.username}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="large-input"
+                />
+                <TextField
+                  label="Create Password"
+                  type="password"
+                  name="newPassword"
+                  value={formData.newPassword}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                  className="small-input"
+                />
+              </>
+            )}
+            <Button variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
+              {isLogin ? "Login" : "Sign Up"}
+            </Button>
+          </form>
+        </Paper>
+      </Container>
+    </div>
   );
 };
 

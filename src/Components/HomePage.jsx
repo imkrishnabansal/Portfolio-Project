@@ -4,7 +4,7 @@ import About from "./About";
 import Projects from "./Projects";
 import "../App.css";
 import Bansalresume from "../assets/Bansal Resume.docx.pdf";
-import myImage from "../assets/myImage.jpeg";
+// import myImage from "../assets/myImage.jpeg";
 import linkedinIcon from "../assets/linkedin.png";
 import twitterIcon from "../assets/twitter.png";
 import githubIcon from "../assets/github.webp";
@@ -152,7 +152,7 @@ const HomePage = () => {
 
             <div className="item5">
               <div className="layer">
-                <img src={myImage} alt="Project Preview" className="layer-image" />
+                {/* <img src={myImage} alt="Project Preview" className="layer-image" /> */}
                 <div className="project-links">
                   <a href="https://github.com/imkrishnabansal/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">GitHub</a>
                   <a href="https://imkrishnabansal.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">Live Web</a>

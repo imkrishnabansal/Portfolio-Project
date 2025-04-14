@@ -1,82 +1,95 @@
+/* Full-screen flex wrapper for vertical + horizontal centering */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+}
+
+.auth-page-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered auth box */
 .auth-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .auth-header .logo {
-    width: 150px;
-    margin-bottom: 15px;
-  }
-  
-  .auth-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .auth-form .MuiTextField-root {
-    width: 100%;
-    margin-bottom: 12px;
-  }
-  
-  .auth-form .MuiTextField-root.large-input .MuiOutlinedInput-root {
-    height: 50px; 
-    font-size: 16px;
-  }
-  
-  .auth-form .MuiTextField-root.small-input .MuiOutlinedInput-root {
-    height: 40px;
-    font-size: 14px;
-  }
-  
-  .auth-form .MuiOutlinedInput-root {
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  .auth-form .MuiInputLabel-root {
-    font-size: 14px;
-  }
-  
-  .auth-form button {
-    margin-top: 12px;
-    width: 100%;
-    background:  #F87474; 
-    color: white;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo styling */
+.auth-header .logo {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* Form styling */
 .auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
-  }
+}
 
-  .auth-form button:hover {
-    background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%); 
-  }
+.auth-form .MuiTextField-root {
+  width: 100%;
+  margin-bottom: 15px;
+}
 
-  .auth-toggle {
-    margin-top: 15px;
-    color: #0095f6;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .auth-toggle:hover {
-    text-decoration: underline;
-  }
-  
+.auth-form .MuiTextField-root.large-input .MuiOutlinedInput-root {
+  height: 50px;
+  font-size: 16px;
+}
+
+.auth-form .MuiTextField-root.small-input .MuiOutlinedInput-root {
+  height: 40px;
+  font-size: 14px;
+}
+
+.auth-form .MuiOutlinedInput-root {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.auth-form .MuiInputLabel-root {
+  font-size: 14px;
+}
+
+.auth-form button {
+  margin-top: 12px;
+  width: 100%;
+  background: #F87474;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(90deg, rgba(79,1,1,1) 0%, rgba(242,79,79,1) 81%);
+}
+
+/* Toggle link */
+.auth-toggle {
+  margin-top: 15px;
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-toggle:hover {
+  text-decoration: underline;
+}
