@@ -11,23 +11,27 @@ form submission is directly routed to the owner via email.
 Her vision made the user journey smooth and efficient.
 
 2.Priyanshi Agarwal
+
 The Voice and Vision
 Priyanshi brought life to the About Section and meticulously handled the non-technical narrative. 
 Her storytelling gave the website its personality,
 connecting users emotionally to the services.
 
 3.  Sumit
+4.  
 The Project Maestro
 Sumit was the brain behind the Project Section, showcasing the portfolio's finest works.
  He also contributed significantly to the backend logic,
 ensuring functionality synced perfectly with design.
 
-4. Ayushi Agarwal
+5. Ayushi Agarwal
+6. 
 The Style Strategist
 Ayushi turned the Contact Page into a visual delight and took charge of the overall CSS styling,
  adding finesse and consistency to the site's aesthetic.
 
-5. Ayushi Varshney
+7. Ayushi Varshney
+8. 
 The Navigator
 Ayushi flawlessly designed the Navbar and Footer,
 providing a clean and intuitive navigation structure that ties
