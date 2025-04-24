@@ -1,7 +1,3 @@
-                                                             FREELANCE PORTFOLIO WEBSITE
-
-
-
 
 "This website is built using the powerful MERN Stack, seamlessly blending performance and scalability to deliver
 a user-centric experience tailored to meet every requirement.
