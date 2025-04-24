@@ -1,12 +1,35 @@
-# React + Vite
+"This website is built using the powerful MERN Stack, seamlessly blending performance and scalability to deliver
+a user-centric experience tailored to meet every requirement.
+"🌟 Krishna Bansal
+1. The Architect of Logic and Flow
+Krishna led the entire backend development with unmatched precision. She also crafted the Home Page,
+embedding all project samples and a dynamic form—ensuring seamless communication where every 
+form submission is directly routed to the owner via email. 
+Her vision made the user journey smooth and efficient.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2.Priyanshi Agarwal
+The Voice and Vision
+Priyanshi brought life to the About Section and meticulously handled the non-technical narrative. 
+Her storytelling gave the website its personality,
+connecting users emotionally to the services.
 
-Currently, two official plugins are available:
+3.  Sumit
+The Project Maestro
+Sumit was the brain behind the Project Section, showcasing the portfolio's finest works.
+ He also contributed significantly to the backend logic,
+ensuring functionality synced perfectly with design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. Ayushi Agarwal
+The Style Strategist
+Ayushi turned the Contact Page into a visual delight and took charge of the overall CSS styling,
+ adding finesse and consistency to the site's aesthetic.
 
-## Expanding the ESLint configuration
+5. Ayushi Varshney
+The Navigator
+Ayushi flawlessly designed the Navbar and Footer,
+providing a clean and intuitive navigation structure that ties
+the entire website together.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
