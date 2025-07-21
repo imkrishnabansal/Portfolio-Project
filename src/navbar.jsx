@@ -23,7 +23,7 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-              <li className="nav-item"><Link className="nav-link p-4" to="/homepage">Home</Link></li>
+              <li className="nav-item"><Link className="nav-link p-4" to="/">Home</Link></li>
               <li className="nav-item"><Link className="nav-link active p-4" to="/about">About</Link></li>
               {/* <li className="nav-item"><Link className="nav-link p-4" to="/pricing">Pricing</Link></li> */}
               <li className="nav-item"><Link className="nav-link p-4" to="/project">Projects</Link></li>

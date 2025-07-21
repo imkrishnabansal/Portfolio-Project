@@ -46,13 +46,14 @@ const HomePage = () => {
           <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active p-4" to="/homepage">Home</Link>
+                <Link className="nav-link p-4" to="/">Home</Link>
+               </li>
+              <li className="nav-item">
+               <Link className="nav-link p-4" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link p-4" to="/about">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link p-4" to="/project">Projects</Link>
+               <Link className="nav-link p-4" to="/project">Projects</Link>
+
               </li>
             </ul>
             <a href={Bansalresume} download="KrishnaBansal" className="my-cv">Download</a>

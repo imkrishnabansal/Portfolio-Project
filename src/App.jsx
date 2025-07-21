@@ -1,12 +1,12 @@
-import Authenticator from "./Authenticator/Authenticator"
-import AppRouter from "./Router"
-function App() {
+import React from 'react';
+import AppRouter from './Router';  // Adjust path as per your project structure
 
+function App() {
   return (
-    <>
+    <div>
       <AppRouter />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
